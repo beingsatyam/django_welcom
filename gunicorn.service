@@ -7,7 +7,7 @@ After=network.target
 User=azureuser
 Group=www-data
 WorkingDirectory=/var/lib/jenkins/workspace/django_welcome_ci_cd
-ExecStart= gunicorn \
+ExecStart= /home/azureuser/.local/bin/gunicorn \
           --error-logfile - /var/lib/jenkins/workspace/django_welcome_ci_cd/logs/error.logs \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
