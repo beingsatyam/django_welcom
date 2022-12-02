@@ -19,8 +19,8 @@ echo "$PWD"
 
 sudo systemctl daemon-reload
 sudo systemctl start gunicorn
-sudo sytemctl enable gunicorn
+sudo systemctl enable gunicorn
 
 echo "gunicorn has been started"
 
-sudo sytemctl status gunicorn
+sudo systemctl status gunicorn
