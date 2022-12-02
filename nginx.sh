@@ -8,6 +8,6 @@ sudo nginx -t
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
-echon "nginx has been started"
+echo "nginx has been started"
 
 sudo systemctl start nginx
