@@ -4,6 +4,8 @@ source django_env/bin/activate
 
 cd /var/lib/jenkins/workspace/django_welcome_ci_cd/
 
+
+python3 -m pip install django
 python3 manage.py makemigrations
 python3 manage.py migrate 
 
